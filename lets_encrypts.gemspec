@@ -7,12 +7,12 @@ require "lets_encrypts/version"
 Gem::Specification.new do |s|
   s.name        = "lets_encrypts"
   s.version     = LetsEncrypt::VERSION
-  s.authors     = ["Your Name"]
-  s.email       = ["your@email.example.com"]
-  s.homepage    = "http://www.amahi.org/apps/yourapp"
+  s.authors     = ["Sukhbir Singh"]
+  s.email       = ["sukhbir947@gmail.com"]
+  s.homepage    = "http://www.amahi.org/apps/lets_encrypts"
   s.license     = "AGPLv3"
   s.summary     = %{Your plugin does this and that.}
-  s.description = %{This is an Amahi 7 platform plugin that does fantastic wizbang things with amazing technology.}
+  s.description = %{This is an Amahi 12 platform plugin required for generating certificates to establish secure connection with subdomains of yourhda.com}
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
