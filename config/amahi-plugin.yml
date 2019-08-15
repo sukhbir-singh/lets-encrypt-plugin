@@ -1,6 +1,6 @@
 # human readable name (no localization supported yet)
 name: LetsEncrypt
 # class to be mounted
-class: LetsEncrypts
+class: LetsEncrypt
 # root url where this plugin will be mounted
-url: /tab/lets_encrypts
+url: /tab/lets_encrypt
