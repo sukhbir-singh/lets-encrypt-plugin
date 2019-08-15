@@ -1,6 +1,10 @@
 container
   div style="padding:20px; background:white;"
     .card.mb-4
+      #main-spinner.lds-css.ng-scope.d-inline-block style="z-index: -1;"
+        .lds-rolling style="width:100%;height:100%"
+          div
+
       h6.card-header
         | Information
       .card-body style="font-size: 14px;"
@@ -20,23 +24,24 @@ container
          span.info-title WebApp Using Certificate:
          span.info-text -
 
-        a.btn.btn-info.f-size-14 href="#" Refresh
+        a#refresh-btn.btn.btn-info.f-size-14 href="#!" Refresh
 
     div.d-inline-block
       #webapp-select-dropdown.dropdown
         button#dropdown-menu-button.btn.btn-info.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
           | Select WebApp
         .dropdown-menu aria-labelledby="dropdownMenuButton"
-          a.dropdown-item.f-size-12 href="#" WebApp1
-          a.dropdown-item.f-size-12 href="#" WebApp2
-          a.dropdown-item.f-size-12 href="#" WebApp3
+          a.dropdown-item.f-size-12 href="#!" WebApp1
+          a.dropdown-item.f-size-12 href="#!" WebApp2
+          a.dropdown-item.f-size-12 href="#!" WebApp3
 
-      a.btn.btn-info.f-size-14 href="#" Configure
+      a#configure-btn.btn.btn-info.f-size-14 href="#!" Configure
 
     div#action-buttons.d-inline-block.float-right
-      a.btn.btn-success.mr-3.f-size-14 href="#" Generate
-      a.btn.btn-warning.mr-3.f-size-14 href="#" Renew
-      a.btn.btn-danger.f-size-14 href="#" Delete
+      a#generate-btn.btn.btn-success.mr-3.f-size-14 href="#!" Generate
+      a#renew-btn.btn.btn-warning.mr-3.f-size-14 href="#!" Renew
+      a#delete-btn.btn.btn-danger.f-size-14 href="#!" Delete
 
 = stylesheet_link_tag 'lets_encrypt'
+= stylesheet_link_tag 'spinner'
 = javascript_include_tag 'lets_encrypt'
