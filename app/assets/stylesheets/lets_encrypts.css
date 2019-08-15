@@ -1,0 +1,30 @@
+.info-title{
+  font-size: 14px;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.info-text{
+  font-size: 13px;
+  color: #4e4d4d;
+}
+
+#webapp-select-dropdown{
+  float: left;
+  margin-right: 14px;
+}
+
+.f-size-14{
+  font-size: 14px;
+}
+
+.f-size-12{
+  font-size: 14px;
+}
+
+#dropdown-menu-button{
+  background: lightgrey;
+  color: black;
+  font-size: 14px;
+  margin-top: 1px;
+}

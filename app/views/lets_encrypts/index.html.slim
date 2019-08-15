@@ -1,13 +1,42 @@
 container
-  div style="background: white; padding: 10px;"
-    = button_tag t('create_certificate'), :type => 'button', :class => 'btnn btn-create btn btn-info pull-left', :id => "create-certificate-button"
-    br
+  div style="padding:20px; background:white;"
+    .card.mb-4
+      h6.card-header
+        | Information
+      .card-body style="font-size: 14px;"
+        p
+         span.info-title Status:
+         span.info-text -
+        p
+         span.info-title Issued On:
+         span.info-text -
+        p
+         span.info-title Valid Upto:
+         span.info-text -
+        p
+         span.info-title Certificate Configured:
+         span.info-text -
+        p
+         span.info-title WebApp Using Certificate:
+         span.info-text -
 
-    = button_tag t('renew_certificate'), :type => 'button', :class => 'open-area btnn btn-create btn btn-info pull-left', :id => "renew-certificate-button"
-    br
+        a.btn.btn-info.f-size-14 href="#" Refresh
 
-    = button_tag t('delete_certificate'), :type => 'button', :class => 'open-area btnn btn-create btn btn-info pull-left', :id => "delete-certificate-button"
-    br
+    div.d-inline-block
+      #webapp-select-dropdown.dropdown
+        button#dropdown-menu-button.btn.btn-info.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+          | Select WebApp
+        .dropdown-menu aria-labelledby="dropdownMenuButton"
+          a.dropdown-item.f-size-12 href="#" WebApp1
+          a.dropdown-item.f-size-12 href="#" WebApp2
+          a.dropdown-item.f-size-12 href="#" WebApp3
+
+      a.btn.btn-info.f-size-14 href="#" Configure
+
+    div.d-inline-block.float-right
+      a.btn.btn-success.mr-3.f-size-14 href="#" Generate
+      a.btn.btn-warning.mr-3.f-size-14 href="#" Renew
+      a.btn.btn-danger.f-size-14 href="#" Delete
 
 = stylesheet_link_tag 'lets_encrypts'
 = javascript_include_tag 'lets_encrypts'
