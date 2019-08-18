@@ -1,2 +1,4 @@
 = Let's Encrypt plugin
 
+
+https://github.com/sukhbir-singh/lets-encrypt-plugin/blob/master/app/assets/images/screenshot.png

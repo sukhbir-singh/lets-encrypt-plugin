@@ -1,5 +1,5 @@
-require "lets_encrypts/version"
-require "lets_encrypts/engine"
+require "lets_encrypt/version"
+require "lets_encrypt/engine"
 
 module LetsEncrypt
 	class Lib
